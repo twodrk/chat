@@ -53,15 +53,15 @@ async def type_and_send(message):
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
-        "[GitHub](https://github.com/thehamkercat/LunaChatBot)"
-        + " | [Group](t.me/PatheticProgrammers)",
+        "[Sahibim](https://t.me/b4f2f)"
+        + " | [Group](t.me/oldermenistan)",
         disable_web_page_preview=True,
     )
 
 
 @luna.on_message(filters.command("help") & ~filters.edited)
 async def start(_, message):
-    await luna.send_chat_action(message.chat.id, "typing")
+    await luna.send_chat_action(message.chat.id, "yazıyor")
     await sleep(2)
     await message.reply_text("/repo - Get Repo Link")
 
@@ -109,7 +109,7 @@ async def main():
     print(
         """
 -----------------
-| Luna Started! |
+| Lie Başladı! |
 -----------------
 """
     )
